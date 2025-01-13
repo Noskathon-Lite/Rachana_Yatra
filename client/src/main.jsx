@@ -5,14 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   Home,
-  Feed,
-  Explore,
-  Login,
-  Signup,
-  Share,
-  Approve,
   PrivateRoute,
-  Profile,
   APrivateRoute,
   ApprovePrivateRoute,
 } from "./component/Index.js";
@@ -20,7 +13,15 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persist } from "./store/store.js";
 import { Provider } from "react-redux";
 import { store } from "./store/store.js";
-import LoginComponent from "./pages/Login.jsx";
+import {
+  Login,
+  Signup,
+  Share,
+  Profile,
+  Approve,
+  Feed,
+  Explore,
+} from "./pages/index.js";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: (
           <APrivateRoute>
-            <LoginComponent />
+            <Login />
           </APrivateRoute>
         ),
       },
