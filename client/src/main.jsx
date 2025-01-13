@@ -19,6 +19,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persist } from "./store/store.js";
 import { Provider } from "react-redux";
 import { store } from "./store/store.js";
+import LoginComponent from "./pages/Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: (
           <APrivateRoute>
-            <Login />
+            <LoginComponent />
           </APrivateRoute>
         ),
       },
