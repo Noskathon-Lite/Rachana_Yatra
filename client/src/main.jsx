@@ -43,11 +43,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <Login />,
+        element: (
+          <APrivateRoute>
+            <Login />
+          </APrivateRoute>
+        ),
       },
       {
         path: "/signup",
-        element: <Signup />,
+        element: (
+          <APrivateRoute>
+            <Signup />
+          </APrivateRoute>
+        ),
       },
       {
         path: "/profile",

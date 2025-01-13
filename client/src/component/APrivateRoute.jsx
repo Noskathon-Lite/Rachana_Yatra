@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom";
 
 function APrivateRoute({ children }) {
   const { currentUser } = useSelector((state) => state.persistedReducer.user);
-  return currentUser.adminStatus ? children : <Navigate to="/" />;
+  return currentUser ? <Navigate to="/" /> : children;
 }
 
 export default APrivateRoute;
