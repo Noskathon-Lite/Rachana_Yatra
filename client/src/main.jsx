@@ -14,6 +14,7 @@ import {
   PrivateRoute,
   Profile,
   APrivateRoute,
+  ApprovePrivateRoute,
 } from "./component/Index.js";
 import { PersistGate } from "redux-persist/integration/react";
 import { persist } from "./store/store.js";
@@ -68,9 +69,9 @@ const router = createBrowserRouter([
       {
         path: "/approve",
         element: (
-          <APrivateRoute>
+          <ApprovePrivateRoute>
             <Approve />
-          </APrivateRoute>
+          </ApprovePrivateRoute>
         ),
       },
     ],
