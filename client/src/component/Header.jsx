@@ -8,7 +8,6 @@ function Header() {
 
   return (
     <div className="w-screen h-16 bg-[#FFF2D3] m-0 flex justify-between items-center px-4">
-      {/* Logo Section */}
       <NavLink to={"/"}>
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-16 w-auto" />
