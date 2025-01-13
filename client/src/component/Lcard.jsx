@@ -16,7 +16,7 @@ function Lcard() {
       </div>
 
       <h2 className="text-xl font-semibold mb-4">
-        Hello, {`${currentUser.username}`}
+        Hello, {currentUser ? currentUser.username : "User"}
       </h2>
       <p className="text-gray-700 px-4 font-merriweather text-lg italic">
         "Your Gateway to Endless Stories, where Stories Come Alive One Share at
