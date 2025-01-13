@@ -15,8 +15,9 @@ function Lcard() {
 
       {/* Greeting and Motivation */}
       <h2 className="text-xl font-semibold mb-4">Hello, user</h2>
-      <p className="text-gray-700 px-4">
-       " Your Gateway to Endless Stories, where Stories Come Alive One Share at a Time"
+      <p className="text-gray-700 px-4 font-merriweather text-lg italic">
+        "Your Gateway to Endless Stories, where Stories Come Alive One Share at
+        a Time"
       </p>
     </div>
   );

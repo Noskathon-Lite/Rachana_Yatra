@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ['Poppins', 'sans-serif'], // Poppins font
+        merriweather: ['Merriweather', 'serif'],
+        playfair: ['Playfair Display', 'serif'],
       },
     },
   },
