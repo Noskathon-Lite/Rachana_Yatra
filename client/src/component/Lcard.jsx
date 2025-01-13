@@ -16,9 +16,7 @@ function Lcard() {
       {/* Greeting and Motivation */}
       <h2 className="text-xl font-semibold mb-4">Hello, user</h2>
       <p className="text-gray-700 px-4">
-        Believe in yourself! Have faith in your abilities! Without a humble but
-        reasonable confidence in your own powers, you cannot be successful or
-        happy.
+       " Your Gateway to Endless Stories, where Stories Come Alive One Share at a Time"
       </p>
     </div>
   );
